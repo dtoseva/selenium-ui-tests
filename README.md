@@ -21,5 +21,5 @@ How to run test: mvn clean test -Denvironment=dev -Dbrowser=firefox
 ##### Allure Report
 mvn allure:serve
 ##### Project structure
-com.ui.tests -> test classes
-com.ui.utils -> config environments file
+- com.ui.tests -> test classes
+- com.ui.utils -> config environments file
