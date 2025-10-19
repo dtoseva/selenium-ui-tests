@@ -34,7 +34,7 @@ public class PriceListItemsTest extends BaseTest {
          "Expected filter Price (high to low) is not selected");
             selectOption.selectByValue("hilo");                  
 
-            List<WebElement> items = driver.findElements(By.cssSelector("inventory_item"));
+            List<WebElement> items = driver.findElements(By.cssSelector(".inventory_item_price"));
             List<Double> prices = items.stream()
                 .map(item -> Double.parseDouble(item.getText()))
                 .collect(Collectors.toList());
