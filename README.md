@@ -17,7 +17,7 @@ git clone https://github.com/dtoseva/selenium-ui-tests.git
   How to run tests: mvn clean test -Denvironment=dev
 #### Supported browsers
 Chrome(defaut) and Firefox
-How to run test: mvn clean test -Denvironment=dev -Dbrowser=firefox 
+- How to run test: mvn clean test -Denvironment=dev -Dbrowser=firefox 
 ##### Allure Report
 mvn allure:serve
 ##### Project structure
