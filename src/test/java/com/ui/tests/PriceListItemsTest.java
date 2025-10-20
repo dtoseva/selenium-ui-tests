@@ -36,7 +36,7 @@ public class PriceListItemsTest extends BaseTest {
 
             List<WebElement> items = driver.findElements(By.cssSelector(".inventory_item_price"));
             List<Double> prices = items.stream()
-                .map(item -> Double.parseDouble(item.getText()))
+                .map(item -> Double.parseDouble(item.getText().replace("$","")))
                 .collect(Collectors.toList());
 
             List<Double> sortPrices = new ArrayList<>(prices);
