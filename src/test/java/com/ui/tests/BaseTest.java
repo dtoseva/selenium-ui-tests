@@ -27,7 +27,7 @@ public class BaseTest {
         String env = System.getProperty("environment", "dev");
         ConfigEnv.loadEnv(env);
 
-        String browser = System.getProperty("chrome", "firefox").toLowerCase();
+        String browser = System.getProperty("browser", "chrome").toLowerCase();
         switch (browser) {
             case "firefox":
                 System.setProperty("webdriver.gecko.driver",
